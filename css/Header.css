@@ -8,6 +8,8 @@
 }
 #header #title-container{
   flex: 3;
+  /* trzeba dodać min width, inaczej podczas resize przeglądarki #earth-container zajmuje całe 100% miejsca */
+  min-width: 100px; 
 }
 #header #earth-container{
   flex: 2;
@@ -19,3 +21,22 @@ canvas{
   background-color: beige;
   z-index: 200;
 }
+
+/*
+  polecam zamiast flexbox zrobić tak:
+
+  #header {
+    width: 100vw;
+  }
+
+  #header #title-container {
+    width: 60vw;
+  }
+
+  #header #earth-container {
+    width: 40vw;
+    background-color: aquamarine;
+  }
+
+  (vw to jest viewport width - czyli np. 60vw to jest 60% szerokości przeglądarki
+*/
