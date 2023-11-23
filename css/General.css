@@ -15,3 +15,6 @@
   --bluemain: #113377;
   --greenmain: #33aa33;
 }
+body{
+  background-color: var(--background);
+}
