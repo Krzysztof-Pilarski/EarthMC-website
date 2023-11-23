@@ -18,6 +18,7 @@ nav div{
   font-size: 15px;
   display: flex;
   align-items: center;
+  cursor: default;
 }
 nav div img{
   width: 50px;
