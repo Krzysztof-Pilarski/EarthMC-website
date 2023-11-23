@@ -52,7 +52,8 @@ function initialize() {
 	renderer = new THREE.WebGLRenderer({ canvas, antialias: true });
 	renderer.setSize(width, height);
 	renderer.setPixelRatio(window.devicePixelRatio);
-	canvas.appendChild(renderer.domElement);
+	// musimy renderować nasz canvas w #earth-container, bo #dynglobe to właśnie jest sam canvas, i probowałeś zrenderować go samego w sobie :D
+	document.getElementById('earth-container').appendChild(renderer.domElement);
 	camera.position.z = 800;
 	
 	// Render planet.
