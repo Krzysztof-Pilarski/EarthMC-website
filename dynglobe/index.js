@@ -44,14 +44,15 @@ let surfaceFlight = true,
 // Buttons/togglers listeners and methods.
 
 function initialize() {
-	const width = window.innerWidth,
-		height = window.innerHeight - 22;
+	const canvas = document.getElementById('dynglobe');
+	const width = canvas.clientWidth;
+		height = canvas.clientHeight;
 	scene = new THREE.Scene();
 	camera = new THREE.PerspectiveCamera(20, width / height, 0.1, 10000);
-	renderer = new THREE.WebGLRenderer({ antialias: true });
+	renderer = new THREE.WebGLRenderer({ canvas, antialias: true });
 	renderer.setSize(width, height);
 	renderer.setPixelRatio(window.devicePixelRatio);
-	document.body.appendChild(renderer.domElement);
+	canvas.appendChild(renderer.domElement);
 	camera.position.z = 800;
 	
 	// Render planet.
