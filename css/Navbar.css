@@ -1,0 +1,41 @@
+
+
+
+
+
+
+
+@media (orientation:landscape){
+  #navbar-menu{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--background);
+  }
+  #navbar-menu div{
+    margin-left: 20px;
+  }
+  #navbar-menu ul{
+    margin-right: 20px;
+    font-weight: 500;
+    width: 40vw;
+    display: flex;
+    justify-content: space-around;
+  }
+}
+@media (orientation:portrait){
+  #navbar-menu{
+    display: none;
+  }
+}
+
+
+
+
+#menu-input{
+  display: none;
+}
+#toggle-sidebar-menu{
+  display: none;
+}
