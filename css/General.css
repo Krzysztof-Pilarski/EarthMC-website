@@ -1,0 +1,20 @@
+/* Configuration */
+*{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  font-family: 'Roboto', sans-serif;
+  font-family: 'Ubuntu', sans-serif;
+  color: var(--text);
+}
+:root{
+  /* Colors */
+  --text: #efefef;
+  --background: #1c1c21;
+  --bluemain: #113377;
+  --greenmain: #33aa33;
+}
+body{
+  background-color: var(--background);
+}

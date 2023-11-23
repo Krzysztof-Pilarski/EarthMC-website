@@ -1,0 +1,21 @@
+#header{
+  position: absolute;
+  top: 120px;
+  width: 100%;
+  height: 600px;
+  background-color: red;
+  display: flex;
+}
+#header #title-container{
+  flex: 3;
+}
+#header #earth-container{
+  flex: 2;
+  background-color: aquamarine;
+}
+canvas{
+  width: 100%;
+  height: 100%;
+  background-color: beige;
+  z-index: 200;
+}
