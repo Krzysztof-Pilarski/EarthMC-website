@@ -48,6 +48,7 @@ function initialize() {
 	const width = canvas.clientWidth;
 		height = canvas.clientHeight;
 	scene = new THREE.Scene();
+	scene.background = new THREE.Color( 0x1c1c21 );
 	camera = new THREE.PerspectiveCamera(20, width / height, 0.1, 10000);
 	renderer = new THREE.WebGLRenderer({ canvas, antialias: true });
 	renderer.setSize(width, height);
@@ -108,14 +109,14 @@ function update() {
 }
 
 function resize() {
-	const width = window.innerWidth,
-		height = window.innerHeight - 22;
+	const canvas = document.getElementById('dynglobe');
+	const width = canvas.clientWidth;
+		height = canvas.clientHeight;
 	camera.aspect = width / height;
 	camera.updateProjectionMatrix();
 	renderer.setSize(width, height);
 }
 
-
+window.addEventListener('resize', resize, false);
 initialize();
 update();
-window.addEventListener('resize', resize, false);

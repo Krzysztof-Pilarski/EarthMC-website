@@ -2,24 +2,37 @@
   position: absolute;
   top: 120px;
   width: 100%;
-  height: 600px;
-  background-color: red;
+  height: 800px;
+  background-color: var(--background);
   display: flex;
 }
 #header #title-container{
-  flex: 3;
+  flex: 1;
   /* trzeba dodać min width, inaczej podczas resize przeglądarki #earth-container zajmuje całe 100% miejsca */
   min-width: 100px; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 400px;
 }
+
 #header #earth-container{
-  flex: 2;
-  background-color: aquamarine;
+  flex: 1;
+  display: flex;
+  justify-content: end;
 }
-canvas{
+#earth-container canvas{
   width: 100%;
   height: 100%;
-  background-color: beige;
   z-index: 200;
+}
+@media (orientation:portrait){
+  #earth-container{
+    display: none;
+  }
+  #earth-container canvas{
+    display: none;
+  }
 }
 
 /*
