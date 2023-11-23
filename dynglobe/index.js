@@ -52,7 +52,7 @@ function initialize() {
 	renderer = new THREE.WebGLRenderer({ canvas, antialias: true });
 	renderer.setSize(width, height);
 	renderer.setPixelRatio(window.devicePixelRatio);
-	canvas.appendChild(renderer.domElement);
+	document.getElementById('earth-container').appendChild(renderer.domElement);
 	camera.position.z = 800;
 	
 	// Render planet.
