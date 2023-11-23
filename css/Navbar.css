@@ -1,4 +1,4 @@
-
+/* General Navbar css */
 #navbar{
   position:fixed;
   height: 100px;
@@ -10,32 +10,25 @@
   box-shadow: 0px 5px 10px #efefef4d,
   inset 0px -10px 10px -5px  #efefef4d;
   border-bottom: 2px solid #efefefaa;
-  z-index: 100;
-}
-#menu-input{
-  display: none;
-}
-
-nav div img{
-  width: 50px;
-  margin-right: 10px;
+  z-index: 90;
 }
 nav div{
+  /* Logo container */
   margin-left: 20px;
   display: flex;
   align-items: center;
   font-size: 15px;
 }
-#navbar-menu li a{
-  text-shadow: 0 0 10px #efefef;
-  transition: .4s;
+nav div img{
+  width: 50px;
+  margin-right: 10px;
 }
-#navbar-menu li a:hover{
-  text-shadow: 0 0 10px #efefef, 0 0 20px #efefef;
+#menu-input{
+  /* input checkbox */
+  display: none;   
 }
-nav #toggle-portrait-menu{
-  margin-right: 15px;
-}
+
+/* Landscape Navbar css */
 #navbar-menu{
   margin-right: 25px;
   display: flex;
@@ -44,7 +37,20 @@ nav #toggle-portrait-menu{
   font-size: 18px;
   font-weight: 500;
 }
+#navbar-menu li a{
+  text-shadow: 0 0 10px #efefef;
+  transition: .4s;
+}
+#navbar-menu li a:hover{
+  text-shadow: 0 0 10px #efefef, 0 0 20px #efefef;
+}
+
+/* Portrait navigation menu toggle button */
+nav #toggle-portrait-menu{
+  margin-right: 15px;
+}
 #toggle-portrait-menu i{
+  /* toggle navigation menu button icon */
   text-shadow: 0 0 10px #efefef;
   transition: .4s;
   cursor: pointer
@@ -52,6 +58,8 @@ nav #toggle-portrait-menu{
 #toggle-portrait-menu i:hover{
   text-shadow: 0 0 10px #efefef, 0 0 20px #efefef;
 }
+
+/* Portrait navigation menu content css */
 #toggle-portrait-menu #portrait-menu-content{
   box-shadow: 0px 5px 10px #efefef4d,
   inset 0px 10px 10px -5px  #efefef4d;
@@ -77,6 +85,7 @@ nav #toggle-portrait-menu{
   font-size: 18px;
   font-weight: 500;
 }
+/* Portrait navigation menu element */
 #portrait-menu-content li a{
   width: 100%;
   background-color: var(--background);
@@ -87,19 +96,19 @@ nav #toggle-portrait-menu{
 }
 #portrait-menu-content li a:hover{
   text-shadow: 0 0 10px #efefef, 0 0 20px #efefef;
-
 }
+
+/* Toggle portrait navbar menu functionality */
 #menu-input:checked + #toggle-portrait-menu #portrait-menu-content {
   visibility: visible;
   opacity: 1;
 }
-
+/* Responsive css */
 @media (orientation:landscape){
   #portrait-menu{
     display: none;
   }
 }
-
 @media (orientation:portrait){
   #navbar-menu{
     display: none;
