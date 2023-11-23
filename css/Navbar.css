@@ -52,6 +52,13 @@ nav div{
   align-items: center;
   font-size: 15px;
 }
+#navbar-menu li a{
+  text-shadow: 0 0 10px #efefef;
+  transition: .4s;
+}
+#navbar-menu li a:hover{
+  text-shadow: 0 0 10px #efefef, 0 0 20px #efefef;
+}
 nav #toggle-portrait-menu{
   margin-right: 15px;
 }
@@ -63,7 +70,18 @@ nav #toggle-portrait-menu{
   font-size: 18px;
   font-weight: 500;
 }
+#toggle-portrait-menu i{
+  text-shadow: 0 0 10px #efefef;
+  transition: .4s;
+  cursor: pointer
+}
+#toggle-portrait-menu i:hover{
+  text-shadow: 0 0 10px #efefef, 0 0 20px #efefef;
+}
 #toggle-portrait-menu #portrait-menu-content{
+  box-shadow: 0px 5px 10px #efefef4d,
+  inset 0px 10px 10px -5px  #efefef4d;
+  border-top: 2px solid #efefefaa;
   position: fixed;
   visibility: hidden;
   opacity: 0;
@@ -72,13 +90,12 @@ nav #toggle-portrait-menu{
   left: 0;
   bottom: 0;
   transition: 0.4s;
-  background-color: red;
+  background-color: var(--background);
   z-index: 100;
 }
 #menu-input:checked + #toggle-portrait-menu #portrait-menu-content {
   visibility: visible;
   opacity: 1;
-  top: 100px;
 }
 @media (orientation:landscape){
   #portrait-menu{
