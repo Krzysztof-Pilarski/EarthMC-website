@@ -20,11 +20,11 @@
   flex: 1;
   display: flex;
   justify-content: end;
+  min-width: 626px;
 }
 #earth-container canvas{
   width: 100%;
   height: 100%;
-  z-index: 200;
 }
 @media (orientation:portrait){
   #earth-container{

@@ -26,7 +26,7 @@
 			this.domElement.style.touchAction = 'none'; // disable touch scroll
 
 			// Set to false to disable this control
-			this.enabled = false;
+			this.enabled = true;
 
 			// "target" sets the location of focus, where the object orbits around
 			this.target = new THREE.Vector3();
@@ -56,7 +56,7 @@
 
 			// This option actually enables dollying in and out; left as "zoom" for backwards compatibility.
 			// Set to false to disable zooming
-			this.enableZoom = true;
+			this.enableZoom = false;
 			this.zoomSpeed = 1.0;
 
 			// This option enables additional feature of dollying - rotate to cursor position on screen
@@ -746,13 +746,6 @@
 					  const x = event.offsetX / scope.domElement.clientWidth * 2 - 1,
 						y = -( event.offsetY / scope.domElement.clientHeight ) * 2 + 1,
 						v = new THREE.Vector2( x, y );
-				
-					  for (let i = 0; i < 5; i++) {
-						dollyIn( getZoomScale() );
-						rotateLeft( -scope.zoomToCursorMultiplier * v.x * scope.rotateSpeed );
-						rotateUp( scope.zoomToCursorMultiplier * v.y * scope.rotateSpeed );
-					  }
-				
 					  scope.update();
 				
 					} else {
