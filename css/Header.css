@@ -7,7 +7,7 @@
   display: flex;
 }
 #header #title-container{
-  flex: 1;
+  width: 50%;
   /* trzeba dodać min width, inaczej podczas resize przeglądarki #earth-container zajmuje całe 100% miejsca */
   min-width: 100px; 
   display: flex;
@@ -17,7 +17,7 @@
 }
 
 #header #earth-container{
-  flex: 1;
+  width: 50%;
   display: flex;
   justify-content: end;
   min-width: 626px;
@@ -27,6 +27,9 @@
   height: 100%;
 }
 @media (orientation:portrait){
+  #title-container{
+    width: 100%;
+  }
   #earth-container{
     display: none;
   }
