@@ -25,13 +25,13 @@ function copyToClipboard() {
     // fade-out animation and deleting notification div
     setTimeout(function() {
       notificationDiv.classList.add("fade-out");
-    }, 2000);
+    }, 1500);
 
     // Removing the fade-out class and hiding the notificationDiv after the animation ends
     setTimeout(function() {
       notificationDiv.classList.remove("fade-out");
       notificationDiv.style.display = 'none';
-    }, 2500); 
+    }, 2000); 
 
     console.log('Text copied to clipboard:', ServerIP);
   } catch (err) {
