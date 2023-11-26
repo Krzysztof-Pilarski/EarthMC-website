@@ -118,7 +118,7 @@ header #earth-container{
   }
 }
 
-#copied-notification{
+#copied-notification {
   position: absolute;
   top: 30px;
   left: 42%;
@@ -128,12 +128,12 @@ header #earth-container{
   border-radius: 10px;
   opacity: 0;
   transition: 0.5s;
-  z-index: 1000;
+  z-index: 100;
 }
-.Fade-in {
+.fade-in{
   display: block;
-  opacity: 1;
+  opacity: 1 !important;
 }
-.Fade-out {
-  opacity: 0;
+.fade-out{
+  opacity: 0 !important;
 }

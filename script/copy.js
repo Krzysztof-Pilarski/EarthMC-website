@@ -1,3 +1,5 @@
+var notificationDiv = document.getElementById("copied-notification");
+
 function copyToClipboard() {
   // text to copy
   var ServerIP = "play.EarthMC.net";
@@ -12,22 +14,24 @@ function copyToClipboard() {
     // copying text
     document.execCommand('copy');
 
-    // Creating notification Div
-    var notificationDiv = document.createElement("div");
-    notificationDiv.id = "copied-notification";
+    // Setting textContent after copying to clipboard
     notificationDiv.textContent = "Copied to Clipboard!";
+
     // fade-in animation
-    notificationDiv.classList.add("Fade-in");
-    // Adding notification Div to title-container
-    document.getElementById("title-container").appendChild(notificationDiv);
+    notificationDiv.classList.add("fade-in");
+    // Displaying the notificationDiv
+    notificationDiv.style.display = 'block';
 
     // fade-out animation and deleting notification div
     setTimeout(function() {
-      notificationDiv.classList.add("Fade-out");
-      setTimeout(function() {
-        notificationDiv.remove();
-      }, 500);
-    }, 3000);
+      notificationDiv.classList.add("fade-out");
+    }, 2000);
+
+    // Removing the fade-out class and hiding the notificationDiv after the animation ends
+    setTimeout(function() {
+      notificationDiv.classList.remove("fade-out");
+      notificationDiv.style.display = 'none';
+    }, 2500); 
 
     console.log('Text copied to clipboard:', ServerIP);
   } catch (err) {
