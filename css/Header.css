@@ -5,6 +5,7 @@ header{
   height: 80vh;
   display: flex;
   justify-content: space-between;
+
 }
 header #title-container{
   display: flex;

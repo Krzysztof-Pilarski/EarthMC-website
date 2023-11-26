@@ -1,0 +1,51 @@
+
+#feedback-grid{
+  margin-top: 130px;
+  display: grid;
+  row-gap: 50px;
+  text-wrap: nowrap;
+}
+
+.Feedback-picture{
+  width: 50px;
+  border-radius: 25px;
+}
+.Feedback .Feedback-citat{
+  margin-top: 10px;
+  font-size: 20px;
+}
+.Feedback .Feedback-name{
+  margin-top: 10px;
+  color: #cfcfcf;
+}
+
+@media (max-width: 800px){
+
+  #feedback-grid{
+    width: 70%;
+    grid-template-columns: 1fr;
+  }
+}
+@media (min-width: 800px){
+  #feedback-grid{
+    width: 85%;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media (min-width: 1200px){
+  #feedback-grid{
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+@media (min-width: 1400px){
+  #feedback-grid{
+    width: 90%;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
+@media (min-width: 1700px){
+  #feedback-grid{
+    width: 90%;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  }
+}
