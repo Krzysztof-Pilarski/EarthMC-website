@@ -127,7 +127,7 @@ header #earth-container{
 #copied-notification {
   position: absolute;
   top: 30px;
-  left: 42%;
+  left: 44%;
   display: none;
   background-color: var(--light);
   padding: 12px 16px;
