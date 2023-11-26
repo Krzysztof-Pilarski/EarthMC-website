@@ -36,6 +36,12 @@ header #earth-container{
   border-bottom: 5px solid #2a631c;
   padding: 20px 20px;
   cursor: pointer;
+  transition: 0.5s;
+}
+#title-container button:hover{
+  background-color: #1e3567;
+  border-top: 5px solid #264381;
+  border-bottom: 5px solid #16284d;
 }
 #earth-container canvas{
   width: 100%;
