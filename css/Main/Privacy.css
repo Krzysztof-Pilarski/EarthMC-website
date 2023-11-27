@@ -1,0 +1,10 @@
+#privacy-policy{
+  width: 100%;
+  height: 180px;
+  display: flex;
+  justify-content: center;
+  align-items: end;
+}
+#privacy-policy a{
+  margin-bottom: 10px;
+}
