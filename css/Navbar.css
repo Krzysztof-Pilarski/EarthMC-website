@@ -39,6 +39,9 @@ nav div img{
   display: flex;
   justify-content: space-between;
 }
+#navbar-menu li{
+  list-style: none;
+}
 #navbar-menu li a{
   text-shadow: 0 0 10px #efefef;
   transition: .4s;
