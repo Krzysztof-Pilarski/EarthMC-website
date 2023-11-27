@@ -1,0 +1,133 @@
+
+#server-description-container{
+  width: 95%;
+  display: flex;
+  flex-direction: column;
+}
+
+#server-description-container .Server-description-left{
+  margin-top: 100px;
+  display: flex;
+}
+.Server-description-left .Description-text{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+#server-description-container .Server-description-right{
+  margin-top: 100px;
+}
+.Server-description-right .Description-text{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.Description-image-container .Description-image{
+  width: 100%;
+  border-radius: 4%;
+}
+.Description-text h2{
+  color: #264381;
+}
+.Description-text p{
+  letter-spacing: 0.05em;
+  word-spacing: 0.12em;
+}
+
+
+
+
+@media (max-width: 1020px){
+  #server-description-container .Server-description-left{
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .Server-description-left .Description-image-container{
+    width: 90%;
+  }
+  .Server-description-left .Description-text{
+    margin-top: 30px;
+    width: 90%;
+  }
+  
+  #server-description-container .Server-description-right{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .Server-description-right .Description-image-container{
+    width: 90%;
+  }
+  .Server-description-right .Description-text{
+    margin-top: 30px;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .Description-text h2{
+    font-size: 36px;
+  }
+  .Description-text p{
+    margin-top: 24px;
+    font-size: 20px;
+  }
+}
+
+@media (min-width: 1020px){
+  .Server-description-left .Description-image-container{
+    width: 60%;
+  }
+  .Server-description-left .Description-text{
+    padding: 0 100px;
+    width: 44%;
+  }
+  
+  .Server-description-right .Description-image-container{
+    float: right;
+    width: 45%;
+  }
+  .Server-description-right .Description-text{
+    overflow: hidden;
+    width: 45%;
+    text-align: end;
+  }
+  .Description-text h2{
+    font-size: 28px;
+  }
+  .Description-text p{
+    margin-top: 20px;
+    font-size: 18px;
+  }
+}
+
+@media (min-width: 1370px){
+  #server-description-container{
+    width: 1300px;
+  }
+  .Server-description-left .Description-image-container{
+    width: 60%;
+  }
+  .Server-description-left .Description-text{
+    padding: 0 100px;
+    width: 44%;
+  }
+  
+  .Server-description-right .Description-image-container{
+    float: right;
+    width: 45%;
+  }
+  .Server-description-right .Description-text{
+    overflow: hidden;
+    width: 45%;
+    text-align: end;
+  }
+  .Description-text h2{
+    font-size: 28px;
+  }
+  .Description-text p{
+    margin-top: 20px;
+    font-size: 18px;
+  }
+}
