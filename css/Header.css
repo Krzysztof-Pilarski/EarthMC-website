@@ -17,6 +17,7 @@ header #title-container{
 header #earth-container{
   width: 55vw;
   min-width: 570px;
+  background-color: var(--background);
   flex-direction: column;
   justify-content: end;
 }
@@ -47,6 +48,7 @@ header #earth-container{
 #earth-container canvas{
   width: 100%;
   height: 98%;
+  background-color: var(--background);
 }
 
 /* Responsive css sorted from small to big */
@@ -126,7 +128,7 @@ header #earth-container{
 }
 
 #copied-notification {
-  position: absolute;
+  position: fixed;
   top: 30px;
   left: 44%;
   display: none;
