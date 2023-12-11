@@ -8,51 +8,50 @@
   justify-content: space-between;
 }
 #earthmcform h2{
-  text-transform: uppercase;
   font-size: 30px;
+  text-transform: uppercase;
 }
 #formcontainer{
-  transition: 0.5s;
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
   position: relative;
+  transition: 0.5s;
 }
 #formcontainer input{
-  background-color: var(--background);
-  border: 1px solid var(--text);
-  border-radius: 5px;
   width: 100%;
   height: 30px;
   color: var(--text);
   font-size: 1em;
   padding: 10px;
+  border-radius: 5px;
+  background-color: var(--background);
+  border: 1px solid var(--text);
   outline: none;
 }
+#formcontainer input:focus{
+  border-color: var(--bluemain);
+}
 #formcontainer span{
-  position: absolute;
-  left: 0;
-  padding: 10px;
-  pointer-events: none;
   font-size: 1em;
   color: var(--text);
-  text-transform: uppercase;
   font-weight: 400;
+  padding: 10px;
+  position: absolute;
+  left: 0;
+  text-transform: uppercase;
   transition: 0.5s;
+  pointer-events: none;
 }
 #formcontainer input:valid ~span,
 #formcontainer input:focus ~span{
   color: var(--bluemain);
-  transform: translateX(20px) translateY(-25px);
   font-size: 0.7em;
   padding: 0 10px;
-  background-color: var(--background);
   letter-spacing: 0.15em;
   border-left: 1px solid var(--bluemain);
   border-right: 1px solid var(--bluemain);
-}
-
-#formcontainer input:focus{
-  border-color: var(--bluemain);
+  background-color: var(--background);
+  transform: translateX(20px) translateY(-25px);
 }
